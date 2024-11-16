@@ -1,0 +1,21 @@
+/* src/components/Message.css */
+
+.message {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 8px;
+    max-width: 65%;
+  }
+  
+  .user {
+    background-color: #0078d4;
+    color: white;
+    align-self: flex-end;
+  }
+  
+  .assistant {
+
+    background-color: #eaeaea;
+    color: #333;
+    align-self: flex-start;
+  }

@@ -1,0 +1,39 @@
+/* src/components/Topbar.css */
+
+.topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #171717;
+    color: white;
+    padding: 10px 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    
+  }
+  .emptySpace{
+    width: 10%;
+  }
+  
+  .topbar-title {
+    font-size: 24px;
+    margin: 0;
+    align-items: center;
+  }
+  
+  .topbar-actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .topbar-button {
+    background-color: #005a9e;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .topbar-button:hover {
+    background-color: #004080;
+  }

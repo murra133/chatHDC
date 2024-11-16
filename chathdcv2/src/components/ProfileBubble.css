@@ -1,0 +1,41 @@
+/* src/components/ProfileBubble.css */
+
+.profile-container {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .profile-bubble {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #fff;
+  }
+  
+  .profile-dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-top: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    z-index: 10;
+  }
+  
+  .dropdown-item {
+    padding: 10px 20px;
+    background-color: white;
+    color: #333;
+    width: 100%;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #f0f0f0;
+  }
