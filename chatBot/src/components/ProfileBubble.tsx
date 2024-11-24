@@ -14,12 +14,6 @@ const ProfileBubble: React.FC = () => {
   return (
     <div className="profile-container" onClick={toggleDropdown}>
     <img src={userAvatar} alt="User Avatar" className="profile-bubble" ></img>
-      {isDropdownOpen && (
-        <div className="profile-dropdown">
-          <button className="dropdown-item">Profile</button>
-          <button className="dropdown-item">Logout</button>
-        </div>
-      )}
     </div>
   );
 };

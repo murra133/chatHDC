@@ -11,12 +11,23 @@
 # production
 /build
 
+
+# test data
+server/src/data
+
 # misc
 .DS_Store
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
+
+**/server/src/components/*.js
+./*.js
+
+# dotenv environment variables file
+.env
+.env.test
 
 npm-debug.log*
 yarn-debug.log*

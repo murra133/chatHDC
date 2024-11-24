@@ -1,0 +1,115 @@
+/* src/components/Sidebar.css */
+
+/* .sidebar {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #171717;
+    padding: 20px;
+    border-right: 1px solid #424242;
+  } */
+  
+  .sidebar h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: white;
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    color: white;
+  }
+  
+  .sidebar li {
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 4px;
+    margin: 5px 0;
+    border-bottom: 0.5px solid #ddd;
+
+  }
+  
+  .sidebar li.selected {
+    background-color: #F7B930;
+    color: white;
+  }
+  
+  .sidebar li:hover {
+    background-color: #ddd;
+  }
+
+  .sidebarWarnings{
+    color: #ddd;
+    font-size: 12px;
+  }
+
+.sidebarEmpty{
+  width: 250px;
+  height: 100%;
+  position: relative;
+  transition: width 0.3s ease-in-out;
+}
+.sidebar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #171717;
+  padding: 20px;
+  padding-top: 60px;
+  border-right: 1px solid #424242;  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+  overflow-y: auto;
+  /* transform: translateX(0); */
+  transition: left 0.3s ease-in-out;
+}
+
+.sidebar.closed {
+  left: -350px;
+  position: absolute;
+  /* transform: translateX(-100%); */
+}
+
+.sidebarEmpty.closed{
+  width: 0px;
+}
+
+.sidebar.open {
+  transform: translateX(0);
+}
+
+/* Toggle button styles */
+.sidebar-toggle-button {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  background-color: transparent;
+  padding: 10px 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1000;
+  transition: background 0.2s;
+  border: none;
+}
+
+.sidebar-toggle-button:hover {
+  background: #F7B930;
+}
+
+/* Mobile-specific styles */
+@media (min-width: 768px) {
+  /* .sidebar-toggle-button {
+    display: none;
+  } */
+
+  .sidebar {
+    transform: translateX(0); /* Sidebar always visible on larger screens */
+  }
+}

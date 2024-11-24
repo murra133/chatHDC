@@ -3,6 +3,8 @@
 .profile-container {
     position: relative;
     cursor: pointer;
+    top:5px;
+
   }
   
   .profile-bubble {

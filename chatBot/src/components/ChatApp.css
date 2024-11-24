@@ -1,0 +1,100 @@
+/* src/components/ChatApp.css */
+
+.chat-app {
+    display: flex;
+    flex-direction: row;
+    height: 90vh;
+    width: 100%;
+    margin: auto;
+    border-radius: 8px;
+    background-color: #212121;
+  }
+  .chat-container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    width: 100%;
+  }
+
+  .loader{
+    overflow: wrap;
+    color: #eaeaea;
+    align-self: flex-start;
+  }
+  
+  .messages {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+  
+    /* Firefox Scrollbar */
+    scrollbar-color: #424242 #212121; /* Thumb color, Track color */
+    scrollbar-width: thin; /* Narrow scrollbar */
+  
+    /* WebKit Scrollbar (Chrome, Safari, Edge) */
+  }
+  .messages::-webkit-scrollbar {
+    width: 8px; /* Width of scrollbar */
+  }
+  
+  .messages::-webkit-scrollbar-thumb {
+    background: #424242; /* Scrollbar thumb color */
+    border-radius: 10px; /* Rounded edges */
+  }
+  
+  .messages::-webkit-scrollbar-track {
+    background: #212121;; /* Scrollbar track color */
+  }
+  
+  .input-container {
+    display: flex;
+    padding: 10px;
+    align-self: center;
+    width: 70%;
+  }
+  
+  .input-container input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #424242;
+    border-radius: 6px;
+    margin-right: 8px;
+    background-color: #424242;
+    color: white;
+    overflow: wrap;
+  }
+  
+  .input-container button.buttonLoading{
+    background-color: gray;
+  }
+
+  .input-container button {
+    padding: 8px 12px;
+    background-color: #F7B930;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .input-container button:hover {
+    background-color: gray;
+  }
+
+
+  /* Mobile-specific styles */
+@media (max-width: 768px) {
+  .input-container {
+    width: 95%;
+  }
+  .chat-app {
+    flex-direction: column;
+    height: 80vh;
+  }
+
+  .sidebar {
+    transform: translateX(0); /* Sidebar always visible on larger screens */
+  }
+}
