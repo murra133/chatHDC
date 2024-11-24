@@ -28,6 +28,7 @@
     overflow-y: auto;
     display: flex;
     flex-direction: column;
+    margin: 20px;
   
     /* Firefox Scrollbar */
     scrollbar-color: #424242 #212121; /* Thumb color, Track color */

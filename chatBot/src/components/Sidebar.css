@@ -47,7 +47,7 @@
   }
 
 .sidebarEmpty{
-  width: 250px;
+  width: 350px;
   height: 100%;
   position: relative;
   transition: width 0.3s ease-in-out;
